@@ -9,7 +9,7 @@ public class principiosObjetos {
 
 
         System.out.print("Paradigma en la Programación Orientada a Objetos"); // En println hace salto de línea
-        // Con el print no hace un salto de linea --- 
+        // Con el print no hace un salto de linea ---
 
 
     }
