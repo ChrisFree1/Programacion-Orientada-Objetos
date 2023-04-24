@@ -27,11 +27,39 @@ public class CrearCuenta {
 
         // Presentacion de mi segunda Cuenta
         // Cuenta de Marcus
-        System.out.println("El numero de la cuenta es " + segundaCuenta.titular);
+        System.out.println("El nombre del titular es " + segundaCuenta.titular);
         System.out.println("El saldo que posee actualmente es de " + segundaCuenta.saldo);
         System.out.println("Su numero de agencia es " + segundaCuenta.agencia);
         System.out.println("El numero de su cuenta es " + segundaCuenta.numero);
 
+
+
+        //Creacion de mi tercera cuenta
+        Cuenta terceraCuenta = new Cuenta();
+        terceraCuenta.saldo = 34.67;
+        terceraCuenta.agencia = 3;
+        terceraCuenta.numero = 4;
+        terceraCuenta.titular="Franco";
+
+
+        // Presentacion de mi tercera cuenta
+        // Cuenta de Franco
+        System.out.println("El numero de la cuenta es " + terceraCuenta.numero);
+        System.out.println("EL saldo que posee actualmente es de " + terceraCuenta.saldo);
+        System.out.println("Su numero de agencia es " + terceraCuenta.agencia);
+        System.out.println("El nombre del titular es " + terceraCuenta.titular);
+
+
+
+        // Realizar un retiro de mi cuenta
+
+        Cuenta cuartaCuenta = new Cuenta();
+        cuartaCuenta.saldo = 100;
+        cuartaCuenta.titular = "Aurelio";
+        cuartaCuenta.retirar(20);
+        cuartaCuenta.consultaCuentaDespuesRetiro(cuartaCuenta.titular,cuartaCuenta.saldo);
+        cuartaCuenta.depositar(20);
+        cuartaCuenta.consultarCuentaDespuesDeposito(cuartaCuenta.titular,cuartaCuenta.saldo);
 
 
     }
